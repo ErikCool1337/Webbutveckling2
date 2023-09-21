@@ -1,0 +1,32 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body iframe
+{
+    border: 2px red solid;
+    width: 99%;
+    height: 80%;
+    
+}
+
+.animalstext
+{
+    background-color: rgb(255, 156, 156);
+    box-shadow: 4px 4px  blue;
+    width: 99%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+
+
+
+
+
