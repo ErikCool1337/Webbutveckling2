@@ -1,0 +1,65 @@
+body
+{
+   display: flex;
+   flex-direction: row;
+   width: 100vw; 
+
+}
+
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.media-item {
+    float: left;
+    width: 33.33%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.clear-left {
+    clear: left;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.flexcontainer
+{
+    display: flex;
+    flex: 1;
+}
+
+
+
+.first
+{
+
+    border: 2px blue solid;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.second
+{
+    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.third
+{
+
+    border: 2px red dashed;
+    flex: 1;
+    
+
+}

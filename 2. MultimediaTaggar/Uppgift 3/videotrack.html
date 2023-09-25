@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videotrack </title>
 
-    <link rel="styleshett" href="videotrack.css">
+    <link rel="stylesheet" href="videotrack.css">
 
 </head>
 <body>
+    <div class="toptext">
+        Sample video, Track, vtt
+    </div>
 
-    <video src="BiderochVideos/samplevideo4.mp4"></video>
+    <video id="video" controls preload="metadata" width="60%">
+        <source src="BiderochVideos/samplevideo4.mp4" type="video/mp4">
+        <track
+        label="English"
+        kind="subtitles"
+        srclang="en"
+        src="BiderochVideos/english-subtitles4.vtt"
+        default />
+        <track>
+
+
+    </video>
     
 </body>
 </html>

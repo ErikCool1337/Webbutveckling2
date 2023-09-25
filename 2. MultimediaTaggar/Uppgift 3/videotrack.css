@@ -1,0 +1,41 @@
+body
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+video
+{
+    width: 80%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+video::cue
+{
+font-size: 30px;
+}
+
+.toptext
+{
+    display: flex;
+    background-color: rgb(113, 189, 113);
+    box-shadow: 5px 5px blue;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 97%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: bold;
+
+}
