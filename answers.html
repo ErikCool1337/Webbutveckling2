@@ -138,6 +138,22 @@
     
 </ol>
 
+5. Selektor Uppgifter
+<ol>
+
+    1. Färgen kommer vara grå. Den sista bestämmer. 
+    <br>
+    2. a:link -> länk som ännu inte besökts. a:visited -> länkar som redan är besökta. a:hover -> en länk med muspekaren över sig. a:active -> en länk som håller på att klickas på. :focus -> ett element som är markerat och redo för input. :firstchild -> ett element som är första barnet till dess föräldrer. 
+
+    <br>
+    3. Svaret är falskt. CSS-koden a { text-decoration: none; } a:focus, a:hover { text-decoration: underline; } ändrar text-decoration till "underline" för länkar när de har fokus eller när muspekaren sveper över dem. Det påverar inte om länken har besökts eller inte. För att ändra stilen för länkar som ännu inte har besökts (ovanliga länkar), behöver du använda pseudoklassen a:link och ändra dess text-decoration.
+    <br>    
+    4. Om du använder selektorn details[open] summary::marker väljs markören (t.ex. en punkt eller ett nummer) som visas framför en öppen (expanderad) <details>-elementets <summary>. Detta används för att anpassa markeringsstilen för <summary> när dess innehåll är synligt.
+    
+
+
+
+</ol>
 
 
 
