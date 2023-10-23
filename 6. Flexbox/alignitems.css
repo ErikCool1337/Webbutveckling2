@@ -1,0 +1,15 @@
+.cards
+{
+    display: flex;
+
+}
+
+.first{
+    border: 2px red dashed;
+}
+
+.first img
+{
+   flex: 1; 
+
+}
