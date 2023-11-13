@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .item {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+
+    border: 2px black solid;
+    background-color: yellow;
+  }
+
+  .odd {
+    background-color: #f0f0f0;
+  }
+
+  .even {
+    background-color: #ccc;
+  }
+
+  .second {
+    flex: 2;
+  }
+
+  .fifth {
+    flex: 2;
+  }
+
+  .eighth {
+    flex: 2;
+  }
+
+  @media screen and (max-width: 600px) {
+    .item {
+      width: 48%; /* Två element per rad på mindre skärmar */
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .item {
+      width: 31%; /* Tre element per rad på skärmar mellan 601px och 900px */
+    }
+  }
+
+  @media screen and (min-width: 901px) {
+    .item {
+      width: 23%; /* Fyra element per rad på skärmar över 900px */
+    }
+  }
+
+
+
+
+
+
+
+
+/* .container
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.container div
+{
+    display: flex;
+
+    background-color: yellow;
+    border: 2px black solid;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    min-width: 50px;
+    padding: 10px;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+   
+}
+
+.second, .fifth, .eighth
+{
+    flex: 1;
+}
+
+.even
+{
+    flex: 3;
+} */
+
+
+
