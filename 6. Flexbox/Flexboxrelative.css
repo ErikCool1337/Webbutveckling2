@@ -1,3 +1,36 @@
+.odd, .even{
+  text-align: center;
+  background-color: yellow;
+  border: 1px black solid;
+  color: white;
+}
+.odd{
+  flex: 1 10%;
+}
+.even{
+  flex: 1 20%;
+}
+.second, .fifth, .eighth{
+  flex: 1 40%;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,56 +39,71 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+ 
+    height: 400px;
+    width: 1500px;
+    border: 2px red solid;
   }
 
-  .item {
+  .container div {
     box-sizing: border-box;
-    padding: 10px;
     text-align: center;
-    flex: 1;
-
+    
     border: 2px black solid;
     background-color: yellow;
+    flex: 1 10%;
+
   }
 
-  .odd {
-    background-color: #f0f0f0;
+
+  .odd
+  {
+    flex: 1;
   }
 
-  .even {
-    background-color: #ccc;
+
+
+  .even
+  {
+    flex: 3;
   }
 
-  .second {
-    flex: 2;
-  }
 
-  .fifth {
-    flex: 2;
-  }
 
-  .eighth {
-    flex: 2;
-  }
+ */
 
-  @media screen and (max-width: 600px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* @media screen and (max-width: 600px) {
     .item {
-      width: 48%; /* Två element per rad på mindre skärmar */
+      width: 48%; 
     }
   }
 
   @media screen and (min-width: 601px) and (max-width: 900px) {
     .item {
-      width: 31%; /* Tre element per rad på skärmar mellan 601px och 900px */
+      width: 31%; 
     }
   }
 
   @media screen and (min-width: 901px) {
     .item {
-      width: 23%; /* Fyra element per rad på skärmar över 900px */
+      width: 23%;
     }
-  }
+  }  */
 
 
 

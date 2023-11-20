@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header
+{
+    display: flex;
+
+    background-color: darkred;
+    flex: 1;
+    height: 200px;
+
+}
