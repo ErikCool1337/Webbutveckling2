@@ -1,0 +1,80 @@
+ul{
+    width: 90vw;
+    /* border: 2px red dashed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 30vh;
+}
+
+li{
+    display: flex;
+    width: 100%;
+    border: 1px red dashed;
+    padding: 5px;
+    margin-right: auto;
+   
+
+}
+
+label
+{
+    align-self: center;
+   flex: 1;
+}
+
+li input
+{
+    flex: 1;
+    height: 30px;
+    background-color: white;
+    border: 1px black solid;
+    
+}
+
+button
+{
+
+    margin-left: auto;
+    
+}
+
+@media screen and (min-width: 320px)
+{
+
+    li input{
+        flex: 1;
+    }
+
+}
+
+@media screen and (min-width: 560px)
+{
+
+    li input{
+        flex: 2;
+    }
+
+}
+
+
+@media screen and (min-width: 860px)
+{
+
+    li input{
+        flex: 3;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
