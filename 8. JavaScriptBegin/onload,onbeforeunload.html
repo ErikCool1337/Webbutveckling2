@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    window.onload= function() {
+          alert("webbsidan är laddat ");
+          
+        }
+        window.onbeforeunload = function (event) {
+          event.preventDefault();
+            return (event.ReturnValue == "");
+        }
+
+        function myFunction() {
+  alert("Thank you for visiting W3Schools!");
+       }
+
+     </script>
+</head>
+<body  onunload="myFunktion">
+
+    <a href="https://www.aftonbladet.se/"> Aftonbladet </a>
+    
+</body>
+</html>
