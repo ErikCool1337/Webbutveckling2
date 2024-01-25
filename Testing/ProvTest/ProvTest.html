@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    input[type="text"],
+    textarea {
+      width: 100vw;
+      background-color: #008080;
+
+    }
+  </style>
+</head>
+<body>
+  <input id="input" type="text">
+  <br><br><br>
+  <div>1. Skriv in en sträng i det blåa!</div>
+  <div>2. Dubbelklicka det blåa!</div>
+  <div>3. Ladda om sidan (om du vill)</div>
+
+  <script>
+    const input = document.getElementById("input")
+    input.ondblclick = function () {
+      if(input.value.length >= 4){
+      document.write("<div>Du har skrivit in: " + input.value + "</div>")
+      document.write("<div>Första tecken är: " + input.value.substr(0, 1) + "</div>")
+      document.write("<div>Första tre tecken är: " + input.value.substr(0, 3) + "</div>")
+      document.write("<div>Omvandlat till små boksväver: " + input.value.toLowerCase() + "</div>")
+      document.write("<div>Omvandlat till stor bokstäver: " + input.value.toUpperCase() + "</div>")
+      document.write("<div>Hitta första förekomsten av f i inskrivna strängen: " + input.value.indexOf("f") + "</div>")
+      document.write("<div>Om det inte finns ett resultat ska bli -1")
+      }
+      else{
+        document.write("Du har skrivit mindre än 4 tecken")
+      }
+    }
+
+  </script>
+</body>
+</html>

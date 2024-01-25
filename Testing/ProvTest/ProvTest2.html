@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbsida med växlande text</title>
+    <style>
+        body {
+            background-color: yellow;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            background-color: Yellow;
+            display: flex;
+            width: 90%;
+            height: fit-content;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+
+        h1, button {
+            margin-right: 10px; /* Lägg till marginal mellan rubrik och knapp */
+        }
+
+        h1 {
+            padding: 10px;
+            height: 90%;
+            font-size: 30px;
+           
+        }
+
+
+
+        button {
+            padding: 10px;
+        }
+
+        p {
+            width: 50%;
+            border: 2px dashed red; /* Ändra till dashed röd */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            border: 2px red dashed;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    
+        <h1 onclick="toggleText()">
+            Visa dolt text om du trycker här
+        </h1>
+    
+    <button onclick="changeBackgroundColor()">Ändra bakgrundsfärg</button>
+    <p id="hiddenText">Dold text som växelvis visas/döljs.</p>
+</div>
+<script>
+    var isTextVisible = false;
+
+    function toggleText() {
+        var hiddenText = document.getElementById('hiddenText');
+        var header = document.querySelector('.content h1');
+
+        isTextVisible = !isTextVisible;
+
+        if (isTextVisible) {
+            hiddenText.style.display = 'block';
+            header.style.height = '60px'; // Öka höjden för rubriken
+        } else {
+            hiddenText.style.display = 'none';
+            header.style.height = '30px'; // Återställ höjden för rubriken
+        }
+    }
+
+    function changeBackgroundColor() {
+        var bodyElements = document.getElementsByTagName('body');
+        var body = bodyElements[0];
+
+        if (body.style.backgroundColor === 'green') {
+            // Återställ till standard bakgrundsfärg
+            body.style.backgroundColor = 'yellow';
+        } else {
+            // Ändra bakgrundsfärg till grön
+            body.style.backgroundColor = 'green';
+        }
+    }
+</script>
+
+</body>
+</html>

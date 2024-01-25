@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #input {
+      width: 99.5%;
+      padding: 3px;
+    }
+
+    input[type="text"],
+    textarea {
+      background-color: rgba(117, 241, 225, 0.726);
+      border-radius: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <input id="input" type="text">
+  <br><br><br>
+  <div>1. Skriv in en sträng i den blåa textrutan!</div>
+  <div>2. Dubbelklicka det blåa!</div>
+  <div>3. Ladda om sidan (om du vill)</div>
+
+  <script>
+    const input = document.getElementById("input")
+    input.ondblclick = function () {
+      document.write("<div>Du har skrivit in: <strong>" + input.value + "</strong></div>")
+
+      document.write("<div>Ditt första tecken är: <strong>" + input.value.substr(0, 1) + "</strong></div>")
+
+      document.write("<div>Första tre tecken är: <strong>" + input.value.substr(0, 3) + "</strong></div>")
+
+      document.write("<div>Omvandlat till små bokstäver: <strong>" + input.value.toLowerCase() + "</strong></div>")
+
+      document.write("<div>Omvandlat till stor bokstäver: <strong>" + input.value.toUpperCase() + "</strong></div>")
+
+      document.write("<div>Hitta den första förekomsten av 'f' i inskrivna strängen: <strong>" + input.value.indexOf("f") + "</strong></div>")
+      document.write("<div>Om det inte finns ett resultat ska bli -1</div>")
+    }
+  </script>
+</body>
+
+</html>
